@@ -1,4 +1,4 @@
-# UITableViewReloadAnimationDemo
+# UITableView Reload Animation
 UITableView reload animations based on Facebook Pop.
 
 <p><a href="https://github.com/iDevHank/UITableViewReloadAnimationDemo/blob/master/ScreenShots/flow.gif" target="_blank"><img src="https://github.com/iDevHank/UITableViewReloadAnimationDemo/blob/master/ScreenShots/flow.gif" alt="Demo" data-canonical-src="https://github.com/iDevHank/UITableViewReloadAnimationDemo/blob/master/ScreenShots/flow.gif" style="max-width:100%;"></a></p>
@@ -17,7 +17,10 @@ UITableView reload animations based on Facebook Pop.
 
 <h3><a id="sa" class="anchor" href="#sa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Animation</h3>
 
+<p>use</p>
 <div class="highlight highlight-objective-c"><pre>[self.tableView reloadDataWithAnimationStyle: <span class="pl-c1">UITableViewReloadAnimationStyleFlow</span>];</pre>
+<p>instead of </p>
+<div class="highlight highlight-objective-c"><pre>[self.tableView reloadData];</pre>
 
 <h3><a id="types" class="anchor" href="#types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Types</h3>
 
