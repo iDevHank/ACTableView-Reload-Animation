@@ -1,6 +1,8 @@
 # UITableViewReloadAnimationDemo
 UITableView reload animations based on Facebook Pop.
 
+<p><a href="https://github.com/iDevHank/UITableViewReloadAnimationDemo/blob/master/ScreenShots/flow.gif" target="_blank"><img src="https://github.com/iDevHank/UITableViewReloadAnimationDemo/blob/master/ScreenShots/flow.gif" alt="Demo" data-canonical-src="https://github.com/iDevHank/UITableViewReloadAnimationDemo/blob/master/ScreenShots/flow.gif" style="max-width:100%;"></a></p>
+
 <h2><a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <p><a href="https://github.com/facebook/pop">Pop</a> is required.</p>
