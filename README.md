@@ -15,7 +15,7 @@ UITableView reload animations based on Facebook Pop.
 
 <div class="highlight highlight-ruby"><pre>#import "UITableView+PopAnimation.h"</pre>
 
-<h3><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Animation</h3>
+<h3><a id="sa" class="anchor" href="#sa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Animation</h3>
 
 <div class="highlight highlight-objective-c"><pre>[self.tableView reloadDataWithAnimationStyle: <span class="pl-c1">UITableViewReloadAnimationStyleFlow</span>];</pre>
 
@@ -29,3 +29,9 @@ UITableViewReloadAnimationStyleRightWave,  /**< from left side */
 UITableViewReloadAnimationStyleFall,  /**< fall */
 UITableViewReloadAnimationStyleFade,  /**< fade in */
 UITableViewReloadAnimationStyleBounce  /**< bounce */</pre>
+
+Just try it !
+
+<h2><a id="user-content-installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Animations</h2>
+Welcome to contact me.
+iDevHank@gmail.com
