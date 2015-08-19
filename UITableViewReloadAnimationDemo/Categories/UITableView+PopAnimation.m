@@ -15,7 +15,7 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
 
 #pragma mark - Reload Tableview with A Custom Animation
 
-- (void)reloadDataWithAnimationStyle:(UITableViewReloadAnimationStyle)style
+- (void)reloadDataWithAnimationStyle:(ACTableViewReloadAnimationStyle)style
 {
     /*! Prevent multi-animations bug.
      *  Multi-animations should not show.
@@ -45,34 +45,34 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
             
             /*! Choose a custom animation style. */
             switch (style) {
-                case UITableViewReloadAnimationStyleNone: {
+                case ACTableViewReloadAnimationStyleNone: {
                     break;
                 }
-                case UITableViewReloadAnimationStyleFlow: {
+                case ACTableViewReloadAnimationStyleFlow: {
                     [self performFlowAnimation];
                     break;
                 }
-                case UITableViewReloadAnimationStyleStack: {
+                case ACTableViewReloadAnimationStyleStack: {
                     [self performStackAnimation];
                     break;
                 }
-                case UITableViewReloadAnimationStyleLeftWave: {
+                case ACTableViewReloadAnimationStyleLeftWave: {
                     [self performLeftWaveAnimation];
                     break;
                 }
-                case UITableViewReloadAnimationStyleRightWave: {
+                case ACTableViewReloadAnimationStyleRightWave: {
                     [self performRightWaveAnimation];
                     break;
                 }
-                case UITableViewReloadAnimationStyleFall: {
+                case ACTableViewReloadAnimationStyleFall: {
                     [self performFallAnimation];
                     break;
                 }
-                case UITableViewReloadAnimationStyleFade: {
+                case ACTableViewReloadAnimationStyleFade: {
                     [self performFadeAnimation];
                     break;
                 }
-                case UITableViewReloadAnimationStyleBounce: {
+                case ACTableViewReloadAnimationStyleBounce: {
                     [self performBounceAnimation];
                     break;
                 }
@@ -163,9 +163,9 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
     scaleAnimation.toValue = [NSValue valueWithCGPoint:CGPointMake(1.0, 1.0)];
     scaleAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     
-    [cell pop_addAnimation:alphaAnimation forKey:@"UITableViewReloadAnimationStyleFlowAlphaAnimation"];
-    [cell pop_addAnimation:positionAnimation forKey:@"UITableViewReloadAnimationStyleFlowPositionAnimation"];
-    [cell pop_addAnimation:scaleAnimation forKey:@"UITableViewReloadAnimationStyleFlowScaleAnimation"];
+    [cell pop_addAnimation:alphaAnimation forKey:@"ACTableViewReloadAnimationStyleFlowAlphaAnimation"];
+    [cell pop_addAnimation:positionAnimation forKey:@"ACTableViewReloadAnimationStyleFlowPositionAnimation"];
+    [cell pop_addAnimation:scaleAnimation forKey:@"ACTableViewReloadAnimationStyleFlowScaleAnimation"];
     cell.hidden = NO;
     
     /*! Last cell. If its animation is over, the tableview's animation is over. */
@@ -211,7 +211,7 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
     positionAnimation.springSpeed = 10.0;
     positionAnimation.springBounciness = 15.0;
     
-    [cell pop_addAnimation:positionAnimation forKey:@"UITableViewReloadAnimationStyleStackPositionAnimation"];
+    [cell pop_addAnimation:positionAnimation forKey:@"ACTableViewReloadAnimationStyleStackPositionAnimation"];
     cell.hidden = NO;
     
     /*! Last cell. If its animation is over, the tableview's animation is over. */
@@ -256,7 +256,7 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
     slideAnimation.springSpeed = 10.0;
     slideAnimation.springBounciness = 13.0;
     
-    [cell pop_addAnimation:slideAnimation forKey:@"UITableViewReloadAnimationStyleLeftWaveSlideAnimation"];
+    [cell pop_addAnimation:slideAnimation forKey:@"ACTableViewReloadAnimationStyleLeftWaveSlideAnimation"];
     cell.hidden = NO;
     
     /*! Last cell. If its animation is over, the tableview's animation is over. */
@@ -301,7 +301,7 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
     slideAnimation.springSpeed = 10.0;
     slideAnimation.springBounciness = 13.0;
     
-    [cell pop_addAnimation:slideAnimation forKey:@"UITableViewReloadAnimationStyleRightWaveSlideAnimation"];
+    [cell pop_addAnimation:slideAnimation forKey:@"ACTableViewReloadAnimationStyleRightWaveSlideAnimation"];
     cell.hidden = NO;
     
     /*! Last cell. If its animation is over, the tableview's animation is over. */
@@ -347,7 +347,7 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
     fallAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     fallAnimation.duration = 0.55;
     
-    [cell pop_addAnimation:fallAnimation forKey:@"UITableViewReloadAnimationStyleFallAnimation"];
+    [cell pop_addAnimation:fallAnimation forKey:@"ACTableViewReloadAnimationStyleFallAnimation"];
     cell.hidden = NO;
     
     /*! Last cell. If its animation is over, the tableview's animation is over. */
@@ -397,7 +397,7 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
     if ([dic[@"isLastObject"] boolValue]) {
         [self addCompletionBlockOfLastAnimation:fadeInAnimation];
     }
-    [cell pop_addAnimation:fadeInAnimation forKey:@"UITableViewReloadAnimationStyleFadeInAnimation"];
+    [cell pop_addAnimation:fadeInAnimation forKey:@"ACTableViewReloadAnimationStyleFadeInAnimation"];
     cell.hidden = NO;
 }
 
@@ -459,9 +459,9 @@ BOOL isAnimating = NO; /**< Tableview is animating or not. */
         [self addCompletionBlockOfLastAnimation:bounceAnimation];
     }
     
-    [cell pop_addAnimation:alphaAnimation forKey:@"UITableViewReloadAnimationStyleBounceAlphaAnimation"];
-    [cell pop_addAnimation:positionAnimation forKey:@"UITableViewReloadAnimationStyleBouncePositionAnimation"];
-    [cell pop_addAnimation:bounceAnimation forKey:@"UITableViewReloadAnimationStyleBounceAnimation"];
+    [cell pop_addAnimation:alphaAnimation forKey:@"ACTableViewReloadAnimationStyleBounceAlphaAnimation"];
+    [cell pop_addAnimation:positionAnimation forKey:@"ACTableViewReloadAnimationStyleBouncePositionAnimation"];
+    [cell pop_addAnimation:bounceAnimation forKey:@"ACTableViewReloadAnimationStyleBounceAnimation"];
     cell.hidden = NO;
 }
 

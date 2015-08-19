@@ -11,6 +11,6 @@
 
 @interface ACBasicTableViewController : UITableViewController
 
-@property (assign, nonatomic) UITableViewReloadAnimationStyle animationStyle; /**< Animation Style */
+@property (assign, nonatomic) ACTableViewReloadAnimationStyle animationStyle; /**< Animation Style */
 
 @end

@@ -48,25 +48,25 @@
     
     switch (indexPath.row) {
         case 0:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleFlow;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleFlow;
             break;
         case 1:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleStack;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleStack;
             break;
         case 2:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleLeftWave;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleLeftWave;
             break;
         case 3:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleRightWave;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleRightWave;
             break;
         case 4:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleFall;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleFall;
             break;
         case 5:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleFade;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleFade;
             break;
         case 6:
-            basicTableViewController.animationStyle = UITableViewReloadAnimationStyleBounce;
+            basicTableViewController.animationStyle = ACTableViewReloadAnimationStyleBounce;
             break;
         default:
             break;

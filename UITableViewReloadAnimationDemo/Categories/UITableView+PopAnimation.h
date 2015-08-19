@@ -12,15 +12,15 @@
 typedef void(^TableViewAnimationCompletionBlock)(void);
 
 /*! Animation Style */
-typedef NS_ENUM(NSInteger, UITableViewReloadAnimationStyle) {
-    UITableViewReloadAnimationStyleNone, /**< no animation */
-    UITableViewReloadAnimationStyleFlow,  /**< flow */
-    UITableViewReloadAnimationStyleStack,  /**< stack */
-    UITableViewReloadAnimationStyleLeftWave,  /**< from right side */
-    UITableViewReloadAnimationStyleRightWave,  /**< from left side */
-    UITableViewReloadAnimationStyleFall,  /**< fall */
-    UITableViewReloadAnimationStyleFade,  /**< fade in */
-    UITableViewReloadAnimationStyleBounce  /**< bounce */
+typedef NS_ENUM(NSInteger, ACTableViewReloadAnimationStyle) {
+    ACTableViewReloadAnimationStyleNone, /**< no animation */
+    ACTableViewReloadAnimationStyleFlow,  /**< flow */
+    ACTableViewReloadAnimationStyleStack,  /**< stack */
+    ACTableViewReloadAnimationStyleLeftWave,  /**< from right side */
+    ACTableViewReloadAnimationStyleRightWave,  /**< from left side */
+    ACTableViewReloadAnimationStyleFall,  /**< fall */
+    ACTableViewReloadAnimationStyleFade,  /**< fade in */
+    ACTableViewReloadAnimationStyleBounce  /**< bounce */
 };
 
 
@@ -32,6 +32,6 @@ typedef NS_ENUM(NSInteger, UITableViewReloadAnimationStyle) {
  *
  *  @param style Animation Style
  */
-- (void)reloadDataWithAnimationStyle:(UITableViewReloadAnimationStyle)style;
+- (void)reloadDataWithAnimationStyle:(ACTableViewReloadAnimationStyle)style;
 
 @end
