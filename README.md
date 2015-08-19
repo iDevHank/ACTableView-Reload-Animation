@@ -18,20 +18,20 @@ UITableView reload animations based on Facebook Pop.
 <h3><a id="sa" class="anchor" href="#sa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Start Animation</h3>
 
 <p>use</p>
-<div class="highlight highlight-objective-c"><pre>[self.tableView reloadDataWithAnimationStyle: <span class="pl-c1">UITableViewReloadAnimationStyleFlow</span>];</pre>
+<div class="highlight highlight-objective-c"><pre>[self.tableView reloadDataWithAnimationStyle: <span class="pl-c1">ACTableViewReloadAnimationStyleFlow</span>];</pre>
 <p>instead of </p>
 <div class="highlight highlight-objective-c"><pre>[self.tableView reloadData];</pre>
 
 <h3><a id="types" class="anchor" href="#types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Types</h3>
 
 <div class="highlight highlight-objective-c"><pre>UITableViewReloadAnimationStyleNone, /**< no animation */
-UITableViewReloadAnimationStyleFlow,  /**< flow */
-UITableViewReloadAnimationStyleStack,  /**< stack */
-UITableViewReloadAnimationStyleLeftWave,  /**< from right side */
-UITableViewReloadAnimationStyleRightWave,  /**< from left side */
-UITableViewReloadAnimationStyleFall,  /**< fall */
-UITableViewReloadAnimationStyleFade,  /**< fade in */
-UITableViewReloadAnimationStyleBounce  /**< bounce */</pre>
+ACTableViewReloadAnimationStyleFlow,  /**< flow */
+ACTableViewReloadAnimationStyleStack,  /**< stack */
+ACTableViewReloadAnimationStyleLeftWave,  /**< from right side */
+ACTableViewReloadAnimationStyleRightWave,  /**< from left side */
+ACTableViewReloadAnimationStyleFall,  /**< fall */
+ACTableViewReloadAnimationStyleFade,  /**< fade in */
+ACTableViewReloadAnimationStyleBounce  /**< bounce */</pre>
 
 Just try it !
 
